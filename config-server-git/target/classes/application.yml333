@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/zhihaomiao/config-repo-demo
+          username: zhihao.miao
+          password: 13579qwertyu
+          search-paths: config-repo
+server:
+  port: 9090
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true

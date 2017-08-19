@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zhihao  # 对应config server中的{application}
+  cloud:
+    config:
+      uri: http://localhost:9090/
+      profile: pro
+      label: config-label-test
+server:
+  port: 8080

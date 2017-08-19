@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:9090
+      profile: pro
+      label: master
+      username: user
+      password: 8c374401-d37c-43fc-8f1e-cf6b09b75045
+server:
+  port: 7070

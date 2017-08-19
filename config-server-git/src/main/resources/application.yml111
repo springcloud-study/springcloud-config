@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+#          uri: http://git.oschina.net/zhihaomiao/config-repo-demo
+#          username: zhihao.miao
+#          password: 13579qwertyu
+#          search-paths: config-repo
+          uri: /var/folders/p0/kw_s_8xj2gqc929nys7cj2yh0000gn/T/config-repo-2847833657021753497/config-repo
+server:
+  port: 9090

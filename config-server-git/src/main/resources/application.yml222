@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+#        health:
+#          repositories:
+#            check:
+#              name: config-repo-demo
+#              label: master
+#              profile: pro
+        git:
+          uri: http://git.oschina.net/zhihaomiao/{application}-config  #此时application就是客户端的spring.application.name属性
+          username: zhihao.miao
+          password: 13579qwertyu
+server:
+  port: 9090
+
+security:
+  user:
+    name: user
+    password: 8c374401-d37c-43fc-8f1e-cf6b09b75045
+
+#encrypt:
+#  key: zhihao.miao
