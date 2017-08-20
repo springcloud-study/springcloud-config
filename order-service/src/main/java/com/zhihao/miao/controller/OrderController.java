@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Auther : 苗志浩 (zhihao.miao@ele.me)
- * @Date :2017/8/16
+ * @Date :2017/8/19
  * @since 1.0
  */
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/order")
+public class OrderController {
 
     private Logger log = LoggerFactory.getLogger(getClass());
 

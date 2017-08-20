@@ -1,9 +1,3 @@
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: root123456
 spring:
   application:
     name: config-server-git

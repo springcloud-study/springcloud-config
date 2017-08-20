@@ -10,7 +10,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @Date :2017/8/11
  * @since 1.0
  */
-//@EnableDiscoveryClient
 @EnableConfigServer
 @SpringBootApplication
 public class ConfigServerApplication {

@@ -14,6 +14,8 @@
         <module>config-client</module>
         <module>user-service</module>
         <module>eureka-server</module>
+        <module>order-service</module>
+        <module>config-server-eureka</module>
     </modules>
 
 

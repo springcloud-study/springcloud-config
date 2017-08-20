@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/zhihaomiao/{application}-config
+          username: zhihao.miao
+          password: 13579qwertyu
+server:
+  port: 9090
+
+encrypt:
+  key: zhihao.miao

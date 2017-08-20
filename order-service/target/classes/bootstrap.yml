@@ -1,16 +1,18 @@
 spring:
   application:
-    name: config-server-git
+    name: order-service
   cloud:
     config:
-      server:
-        git:
-          uri: http://git.oschina.net/zhihaomiao/config-repo-demo
-          username: zhihao.miao
-          password: 13579qwertyu
-          search-paths: config-repo
+      discovery:
+        enabled: true
+        service-id: config-server-git
+      username: user
+      password: root123456
+      profile: pro
+      label: master
 server:
-  port: 9090
+  port: 6060
+
 
 eureka:
   client:
@@ -19,3 +21,5 @@ eureka:
   instance:
     instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     prefer-ip-address: true
+
+

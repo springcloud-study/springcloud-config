@@ -1,0 +1,29 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: root123456
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/zhihaomiao/{application}-config
+          username: zhihao.miao
+          password: 13579qwertyu
+server:
+  port: 9090
+
+encrypt:
+  key: zhihao.miao
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true

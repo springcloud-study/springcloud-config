@@ -1,12 +1,14 @@
 spring:
   application:
-    name: user-service
+    name: order-service
   cloud:
     config:
       uri: http://localhost:9090
+      username: user
+      password: root123456
       profile: pro
       label: master
 server:
-  port: 7070
+  port: 6060
 
 
